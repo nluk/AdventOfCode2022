@@ -9,11 +9,13 @@ group = "me.nluk"
 version = "1.0-SNAPSHOT"
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation("org.huldra.math:Huldra:1.0-SNAPSHOT")
 }
 
 tasks.test {
